@@ -40,20 +40,18 @@ p, h1,h2,h3,h4,h5,h6{
 
 
 
-#carouselImage>h6{
+.titleInfo{
     position: absolute;
     top: 18px;
     left: 18px;
-    font-size: 40px;
     color: white;
     text-shadow: 0 0 3px black;
 }
 
+
 .bgText{
     position: absolute;
-    top: 72px;
     padding: 4px 4px 4px 4px;
-    left: 18px;
     background-color: #924f4f87;
 }
 
