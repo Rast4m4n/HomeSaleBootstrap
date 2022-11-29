@@ -4,10 +4,12 @@
     font-family: 'Forum';
     src: url('assets/fonts/Forum-Regular.ttf');
 }
+
 *{
     padding: 0;
     margin: 0;
 }
+
 body {
     background-color: #ECECEC;
 }
@@ -51,7 +53,7 @@ p, h1,h2,h3,h4,h5,h6{
 
 .bgText{
     position: absolute;
-    padding: 4px 4px 4px 4px;
+    padding: 4px;
     background-color: #924f4f87;
 }
 
@@ -75,10 +77,11 @@ p, h1,h2,h3,h4,h5,h6{
     background-color: rgba(0, 0, 0, 0.519);
    
 }
+
 .info{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:end;
     color: white;
     line-height: 0.6 ;
     text-align: center;
@@ -87,4 +90,8 @@ p, h1,h2,h3,h4,h5,h6{
 
 .largeText{
     font-size: 20px;
+}
+
+.card{
+    min-height: 250px;
 }
