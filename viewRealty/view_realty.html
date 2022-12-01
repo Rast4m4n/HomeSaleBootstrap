@@ -42,7 +42,7 @@
         </div>
     </nav>
 
-     <!-- Слайдер картинок -->
+     <!-- Картинка -->
      <div id="carouselImage" class="carousel slide " data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="5000">
@@ -52,21 +52,21 @@
         </div>
 
         <div class="titleInfo">
-            <h1>ЖК Мир</h1>
+            <h1 id="nameRealty">ЖК </h1>
         </div>
 
         <div class="footerInfo">
             <div class="info">
                 <p class="largeText">Цена</p>
-                <p>от 20 до 60 млн. руб.</p>
+                <p id="price">от 20 до 60 млн. руб.</p>
             </div>
             <div class="info">
-                <p class="largeText">Тип</p>
-                <p>Бизнес-класс</p>
+                <p class="largeText">Местоположение</p>
+                <p id="address"></p>
             </div>
             <div class="info">
                 <p class="largeText">Застройщик</p>
-                <p>ПИК</p>
+                <p id="develope">ПИК</p>
             </div>
         </div>
     </div>
@@ -125,9 +125,25 @@
     </div>
 
     <script scr="view.js">
-        let params = (new URL(document.location)).searchParams;
-        let img = document.getElementById('image');
-        img.src = `../assets/images/buisnesClass/buisnes${2}.jpg`
+        const urlParams = (new URL(document.location)).searchParams;
+        
+        const typeRealty = urlParams.get("type");
+        const numImage = urlParams.get("image");
+        const img = document.getElementById('image');
+        img.src = `../assets/images/${typeRealty}${numImage}.jpg`
+
+        const nameRealty= document.getElementById("nameRealty");
+        nameRealty.insertAdjacentHTML("beforeend", urlParams.get("name"));
+
+        const price = document.getElementById("price");
+        price.innerHTML = urlParams.get("price");
+
+        const address = document.getElementById("address");
+        address.innerHTML = urlParams.get("address");
+
+        const develope = document.getElementById("develope");
+        develope.innerHTML = urlParams.get("develope")
+
     </script>
 </body>
 </html>
