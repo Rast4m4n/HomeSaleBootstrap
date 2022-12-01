@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- панель навигации -->
-    <nav class="navbar bg-white navbar-expand-sm ">
+    <nav class="navbar bg-white navbar-expand-md ">
         <div class="container-fluid ">
             <a href="../main/main_page.html" class="navbar-brand ">
                 <img src="../assets/icons/HomeIcon.svg" height="25" width="25" class="align-top">
@@ -28,10 +28,10 @@
             <div class="collapse navbar-collapse" id="navbarCollapsed">
                 <ul class="navbar-nav ">
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Квартиры и новостройки</a>
+                        <a href="../flatAndRealty/flat_and_new_realty.html" class="nav-link">Квартиры и новостройки</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Дома и участки</a>
+                        <a href="../homeAndArea/home_and_area.html" class="nav-link">Дома и участки</a>
                     </li>
                     <li class="nav-item">
                         <a href="../aboutUs/about_us.html" class="nav-link">О нас</a>
@@ -46,27 +46,14 @@
      <div id="carouselImage" class="carousel slide " data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="5000">
-                <img src="../assets/images/buisnesClass/buisnes2.jpg" class="img-fluid ">
+                <img src="" class="img-fluid " id="image">
             </div>
-            <div class="carousel-item " data-bs-interval="5000">
-                <img src="../assets/images/headScreen2.jpg" class="img-fluid">
-            </div>
-            <div class="carousel-item " data-bs-interval="5000">
-                <img src="../assets/images/headScreen3.jpg" class="img-fluid">
-            </div>
+            
         </div>
-
-        <button class="carousel-control-prev " type="button" data-bs-target="#carouselImage" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon rounded bg-black" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next " type="button" data-bs-target="#carouselImage" data-bs-slide="next">
-            <span class="carousel-control-next-icon rounded bg-black " aria-hidden="true"></span>
-        </button>
 
         <div class="titleInfo">
             <h1>ЖК Мир</h1>
         </div>
-
 
         <div class="footerInfo">
             <div class="info">
@@ -96,9 +83,9 @@
         <div class="container-fluid ">
             <div class="row row-cols-auto align-items-center justify-content-center g-2">
                 <div class="col ">
-                    <button class="btn btn-outline-dark" type="button">
-                        Оплатить
-                    </button>
+                    <a href="../formOrder/order.html" class="btn btn-outline-dark">
+                        Переидти к оформлению
+                    </a>
                 </div>
     
                 <div class="col ">
@@ -133,9 +120,14 @@
         </div>
     </div>
 
-        <div style="text-align: center;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1123.209326361459!2d37.740154796586175!3d55.73385456575538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab548d01a3643%3A0x80fad2dd88123790!2z0J_QmNCaIC8g0J_QtdGA0L7QstGB0LrQvtC1IDI!5e0!3m2!1sru!2sru!4v1669810156607!5m2!1sru!2sru" width="600" height="450" style="border:0;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+    <div style="text-align: center;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1123.209326361459!2d37.740154796586175!3d55.73385456575538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414ab548d01a3643%3A0x80fad2dd88123790!2z0J_QmNCaIC8g0J_QtdGA0L7QstGB0LrQvtC1IDI!5e0!3m2!1sru!2sru!4v1669810156607!5m2!1sru!2sru" width="600" height="450" style="border:0;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
+    <script scr="view.js">
+        let params = (new URL(document.location)).searchParams;
+        let img = document.getElementById('image');
+        img.src = `../assets/images/buisnesClass/buisnes${2}.jpg`
+    </script>
 </body>
 </html>
