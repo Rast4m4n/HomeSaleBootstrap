@@ -39,9 +39,6 @@ p, h1,h2,h3,h4,h5,h6{
 }
 
 
-
-
-
 .titleInfo{
     position: absolute;
     top: 18px;
@@ -49,8 +46,6 @@ p, h1,h2,h3,h4,h5,h6{
     color: white;
     text-shadow: 0 0 3px black;
 }
-
-
 
 
 .footerInfo{
@@ -76,7 +71,7 @@ p, h1,h2,h3,h4,h5,h6{
     font-size: 20px;
 }
 
-#cardWidget{
+#cardImage{
     max-height: 300px;
     min-height: 300px;
 }
@@ -89,3 +84,11 @@ footer{
     align-items: center;
 }
 
+#cardWidget{
+    transition-duration: .5s;
+}
+
+#cardWidget:hover{
+    transition-duration: .5s;
+    box-shadow: 0px 1px 3px  black;
+}
