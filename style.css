@@ -17,6 +17,8 @@ body {
 p, h1,h2,h3,h4,h5,h6{
     font-family: 'Roboto';
     font-style:normal;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar{
@@ -67,7 +69,6 @@ p, h1,h2,h3,h4,h5,h6{
     flex-direction: column;
     justify-content:center;
     color: white;
-    line-height: 0.6 ;
     text-align: center;
 }
 
@@ -79,3 +80,12 @@ p, h1,h2,h3,h4,h5,h6{
     max-height: 300px;
     min-height: 300px;
 }
+
+footer{
+    background-color: #fff;
+    height: 50px;
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+}
+
