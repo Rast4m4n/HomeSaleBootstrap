@@ -48,7 +48,7 @@ function generateRealty() {
     const randAddress = address[Math.floor(Math.random() * address.length)];
     const realty = document.createElement('div');
     console.log(randRealty);
-    realty.innerHTML = `<div class="col" style="padding: 12px;"><a href="../viewRealty/view_realty.html?image=${randImage}&type=${randRealty}&name=${randName}&develope=${randDev}&price=${randPrice}&address=${randAddress}" class="link-dark" style="text-decoration: none;"><div class="card" ><img src="../assets/images/${randRealty}${randImage}.jpg" alt="" class="card-img-top" id="cardWidget"><div class="card-body" ><div class="card-subtitle" style="font-weight: bold;">ЖК ${randName}</div><div class="card-text">${randPrice}</div><div class="card-text">${randAddress}</div><br></div><div class="card-footer "> Застройщик ${randDev}</div></div></a></div>`;
+    realty.innerHTML = `<div class="col" style="padding: 12px;" id="cardWidget"><a href="../viewRealty/view_realty.html?image=${randImage}&type=${randRealty}&name=${randName}&develope=${randDev}&price=${randPrice}&address=${randAddress}" class="link-dark" style="text-decoration: none;"><div class="card" ><img src="../assets/images/${randRealty}${randImage}.jpg" alt="" class="card-img-top" id="cardImage"><div class="card-body" ><div class="card-subtitle" style="font-weight: bold;">ЖК ${randName}</div><div class="card-text">${randPrice}</div><div class="card-text">${randAddress}</div><br></div><div class="card-footer "> Застройщик ${randDev}</div></div></a></div>`;
     return realty;
 }
 
